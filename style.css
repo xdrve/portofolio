@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+}
+Html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #132d46;
+    color: rgba(255, 255, 255, 0.884);
+}
+
+
+ 
+.header {   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 1.5% 10%;
+    background: #1f232a;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.884);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.884);
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 40px;
+    transition: .3s;
+
+}
+
+.navbar a:hover, 
+.navbar a.active {
+    color: #62b3ff;
+
+}
+
+.About-me  {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+ 
+.About-me-content {
+    max-width: 600px;
+}
+
+.About-me-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding-left: 10%;
+}
+
+.About-me-content h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #49a3f7;
+    padding-left: 10%;
+}
+
+.About-me-content p {
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+.About-me-content img{
+    width: 45vh;
+    height: 75vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    display: flex;
+}
+
+.project{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 10% 40px 10%;
+}
+
+.project-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.item-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.project-content h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.884);
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+.project-content h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: #49a3f7;
+    text-align: center;
+
+}
+
+.kotak-text{
+    background-color: rgba(255, 255, 255, 0.884);
+    color: #212529;
+    padding: 25px ;
+    border-radius: 12px;
+    max-width: 500px;
+    font-size:20px;
+    text-align: center;
+}
+
+.project-content h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 12px;
+    color: #49a3f7;
+    text-align: center;
+}
+
+.project-content img{
+    width: 200px;
+    height: auto;
+    border-radius: 8%;
+    display: block;
+    margin: 0 auto;
+}
+
+.Contact{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10% 40px 10%;
+}
+
+.Contact-content h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.884);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Contact-content h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: #49a3f7;
+    text-align: center;
+
+}
+
+.Contact-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.Contact-group img{
+    width: 45px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Contact-group img:hover {
+    transform: scale(1.15); 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 4% 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .About-me {
+        height: auto;
+        padding: 120px 5% 50px 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .About-me-content {
+        max-width: 100%;
+    }
+
+    .About-me-content h1 {
+        font-size: 36px;
+        padding-left: 0;
+    }
+
+    .About-me-content h3 {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .About-me-content p {
+        font-size: 16px;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .About-me-content img {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .project {
+        height: auto;
+        padding: 50px 5%;
+    }
+
+    .project-content h1 {
+        font-size: 32px;
+    }
+
+    .project-content h2,
+    .project-content h3 {
+        font-size: 20px;
+    }
+
+    .kotak-text {
+        margin-left: 0;
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .Contact-content h1 {
+        font-size: 36px;
+    }
+
+    .project-box{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .item-box{
+        width: 100%;
+    }
+
+    .project-content img{
+        width: 60px;
+    }
+ 
+    .Contact{
+        padding: 50px 5%;
+        min-height: auto;
+    }
+
+    .Contact-content h1{
+        font-size: 30px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .Contact-content h2{
+        font-size: 20px;
+        margin-top: 6px;
+        text-align: center;
+    }
+
+    .Contact-group{
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .Contact-group img{
+        width: 35px;
+    }
+
+}
